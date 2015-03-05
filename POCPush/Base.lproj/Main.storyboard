@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="POCPush" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,91 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2AL-Ld-0F9">
+                                <rect key="frame" x="201" y="82" width="198" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="198" id="FS4-Hh-FGe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YgV-JH-EcM">
+                                <rect key="frame" x="265" y="120" width="70" height="30"/>
+                                <state key="normal" title="Registreer">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="gfI-qc-dHa" kind="show" identifier="registreer" id="JTG-OU-8sK"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gebruikersnaam" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jJg-IK-gl6">
+                                <rect key="frame" x="237" y="53" width="127" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2AL-Ld-0F9" firstAttribute="centerX" secondItem="jJg-IK-gl6" secondAttribute="centerX" id="C4q-Ei-WY9"/>
+                            <constraint firstItem="jJg-IK-gl6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="33" id="btB-WS-h8o"/>
+                            <constraint firstItem="2AL-Ld-0F9" firstAttribute="top" secondItem="jJg-IK-gl6" secondAttribute="bottom" constant="8" symbolic="YES" id="c76-z3-n2w"/>
+                            <constraint firstItem="YgV-JH-EcM" firstAttribute="top" secondItem="2AL-Ld-0F9" secondAttribute="bottom" constant="8" symbolic="YES" id="e7e-C7-1z2"/>
+                            <constraint firstItem="2AL-Ld-0F9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eLG-cq-fXE"/>
+                            <constraint firstItem="2AL-Ld-0F9" firstAttribute="centerX" secondItem="YgV-JH-EcM" secondAttribute="centerX" id="u5f-xM-Pe0"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--User Controller-->
+        <scene sceneID="EIS-XB-415">
+            <objects>
+                <viewController id="gfI-qc-dHa" customClass="UserController" customModule="POCPush" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="B42-gq-2b7"/>
+                        <viewControllerLayoutGuide type="bottom" id="n0n-z5-ogz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="agD-qf-Y4c">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Je kunt nu apple push" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FiB-wH-P6f">
+                                <rect key="frame" x="215" y="67" width="170" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="notificaties ontvangen als gebruiker: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wmV-fj-ttG">
+                                <rect key="frame" x="160" y="96" width="282" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DEZ-0e-leW">
+                                <rect key="frame" x="256" y="245" width="88" height="109"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wmV-fj-ttG" firstAttribute="centerX" secondItem="agD-qf-Y4c" secondAttribute="centerX" constant="1" id="2Fi-4T-gqR"/>
+                            <constraint firstItem="FiB-wH-P6f" firstAttribute="centerX" secondItem="wmV-fj-ttG" secondAttribute="centerX" constant="-1" id="EX0-1M-UE1"/>
+                            <constraint firstItem="FiB-wH-P6f" firstAttribute="top" secondItem="B42-gq-2b7" secondAttribute="bottom" constant="47" id="Xit-vn-PVM"/>
+                            <constraint firstItem="wmV-fj-ttG" firstAttribute="top" secondItem="FiB-wH-P6f" secondAttribute="bottom" constant="8" symbolic="YES" id="etg-95-vuA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="UserLabel" destination="DEZ-0e-leW" id="MdK-Ul-cqh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cVp-YN-oy7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1116" y="383"/>
         </scene>
     </scenes>
 </document>

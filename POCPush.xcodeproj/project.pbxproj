@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE3DFCE51AA8A2FE005A3A76 /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3DFCE41AA8A2FE005A3A76 /* UserController.swift */; };
 		CEEBE4F31A9DE09A00F932F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEBE4F21A9DE09A00F932F0 /* AppDelegate.swift */; };
 		CEEBE4F51A9DE09A00F932F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEBE4F41A9DE09A00F932F0 /* ViewController.swift */; };
 		CEEBE4F81A9DE09A00F932F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEEBE4F61A9DE09A00F932F0 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE3DFCE41AA8A2FE005A3A76 /* UserController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
 		CEEBE4ED1A9DE09A00F932F0 /* POCPush.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = POCPush.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEEBE4F11A9DE09A00F932F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEEBE4F21A9DE09A00F932F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 		CEEBE4EF1A9DE09A00F932F0 /* POCPush */ = {
 			isa = PBXGroup;
 			children = (
+				CE3DFCE41AA8A2FE005A3A76 /* UserController.swift */,
 				CEEBE4F21A9DE09A00F932F0 /* AppDelegate.swift */,
 				CEEBE4F41A9DE09A00F932F0 /* ViewController.swift */,
 				CEEBE4F61A9DE09A00F932F0 /* Main.storyboard */,
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE3DFCE51AA8A2FE005A3A76 /* UserController.swift in Sources */,
 				CEEBE4F51A9DE09A00F932F0 /* ViewController.swift in Sources */,
 				CEEBE4F31A9DE09A00F932F0 /* AppDelegate.swift in Sources */,
 			);
@@ -409,6 +413,7 @@
 				CEEBE50E1A9DE09A00F932F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CEEBE50F1A9DE09A00F932F0 /* Build configuration list for PBXNativeTarget "POCPushTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +422,7 @@
 				CEEBE5111A9DE09A00F932F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
