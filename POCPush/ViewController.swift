@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var textField: UITextField!
     var user : String!
     var myDeviceToken : String!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -30,7 +30,7 @@ class ViewController: UIViewController {
     
     @IBAction func registerUser(sender: UIButton) {
         user = textField.text
-        
+        println(user)
     }
     
     // implemented in your application delegate

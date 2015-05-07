@@ -17,7 +17,7 @@
                BlueprintIdentifier = "CEEBE4EC1A9DE09A00F932F0"
                BuildableName = "POCPush.app"
                BlueprintName = "POCPush"
-               ReferencedContainer = "container:POCPush.xcodeproj">
+               ReferencedContainer = "container:snschat.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -31,7 +31,7 @@
                BlueprintIdentifier = "CEEBE5011A9DE09A00F932F0"
                BuildableName = "POCPushTests.xctest"
                BlueprintName = "POCPushTests"
-               ReferencedContainer = "container:POCPush.xcodeproj">
+               ReferencedContainer = "container:snschat.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -49,7 +49,7 @@
                BlueprintIdentifier = "CEEBE5011A9DE09A00F932F0"
                BuildableName = "POCPushTests.xctest"
                BlueprintName = "POCPushTests"
-               ReferencedContainer = "container:POCPush.xcodeproj">
+               ReferencedContainer = "container:snschat.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -59,7 +59,7 @@
             BlueprintIdentifier = "CEEBE4EC1A9DE09A00F932F0"
             BuildableName = "POCPush.app"
             BlueprintName = "POCPush"
-            ReferencedContainer = "container:POCPush.xcodeproj">
+            ReferencedContainer = "container:snschat.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -78,7 +78,7 @@
             BlueprintIdentifier = "CEEBE4EC1A9DE09A00F932F0"
             BuildableName = "POCPush.app"
             BlueprintName = "POCPush"
-            ReferencedContainer = "container:POCPush.xcodeproj">
+            ReferencedContainer = "container:snschat.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -96,7 +96,7 @@
             BlueprintIdentifier = "CEEBE4EC1A9DE09A00F932F0"
             BuildableName = "POCPush.app"
             BlueprintName = "POCPush"
-            ReferencedContainer = "container:POCPush.xcodeproj">
+            ReferencedContainer = "container:snschat.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

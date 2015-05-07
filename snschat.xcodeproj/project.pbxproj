@@ -160,10 +160,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0610;
-				ORGANIZATIONNAME = 42IN11SOf;
+				ORGANIZATIONNAME = nl.avans;
 				TargetAttributes = {
 					CEEBE4EC1A9DE09A00F932F0 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 37HYQWCA73;
 					};
 					CEEBE5011A9DE09A00F932F0 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -171,7 +172,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CEEBE4E81A9DE09A00F932F0 /* Build configuration list for PBXProject "POCPush" */;
+			buildConfigurationList = CEEBE4E81A9DE09A00F932F0 /* Build configuration list for PBXProject "snschat" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -342,6 +343,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = POCPush/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -353,6 +355,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = POCPush/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -397,7 +400,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CEEBE4E81A9DE09A00F932F0 /* Build configuration list for PBXProject "POCPush" */ = {
+		CEEBE4E81A9DE09A00F932F0 /* Build configuration list for PBXProject "snschat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CEEBE50A1A9DE09A00F932F0 /* Debug */,
